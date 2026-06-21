@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Coach Alea">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#08111f"/>
+      <stop offset="55%" stop-color="#13163b"/>
+      <stop offset="100%" stop-color="#2a1035"/>
+    </linearGradient>
+    <linearGradient id="ring" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#7ef9ff"/>
+      <stop offset="50%" stop-color="#ff4da6"/>
+      <stop offset="100%" stop-color="#ffe66d"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="512" height="512" rx="112" fill="url(#bg)"/>
+  <rect x="34" y="34" width="444" height="444" rx="96" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="4"/>
+
+  <circle cx="256" cy="256" r="152" fill="none" stroke="url(#ring)" stroke-width="18" filter="url(#glow)"/>
+  <circle cx="256" cy="256" r="122" fill="rgba(255,255,255,0.03)" stroke="rgba(126,249,255,0.35)" stroke-width="6"/>
+
+  <rect x="225" y="70" width="62" height="38" rx="14" fill="#ffe66d" stroke="#08111f" stroke-width="8"/>
+  <rect x="202" y="102" width="108" height="24" rx="12" fill="#ff4da6" opacity="0.95"/>
+
+  <path d="M238 164 L282 164 L262 236 L316 236 L214 364 L238 278 L194 278 Z" fill="#7ef9ff" filter="url(#glow)"/>
+  <circle cx="256" cy="256" r="176" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="2"/>
+</svg>
